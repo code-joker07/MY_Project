@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Page</title>
+    <style>
+        #search-container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #output {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Enter your search query">
+        <button onclick="search()">Search</button>
+    </div>
+    <div id="output">
+        <h3>Search Results:</h3>
+        <p id="search-results"></p>
+    </div>
+
+    <script>
+        function search() {
+            var searchTerm = document.getElementById("search-bar").value;
+            var searchResults = document.getElementById("search-results");
+
+            // Perform search logic here
+            // You can replace the following line with your own search implementation
+            var results = "Search query: " + searchTerm;
+
+            searchResults.textContent = results;
+        }
+    </script>
+</body>
+</html>
+
